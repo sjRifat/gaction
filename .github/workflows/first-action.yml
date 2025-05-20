@@ -1,0 +1,12 @@
+name: First Workflow # workflow name
+on: workflow_dispatch # manually trigger
+jobs:
+  first-job: # job name
+    #the runner env
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step # step name
+        run: echo "hello first step"
+      - name: Second stpe
+        run: echo "done - bye"
+        
