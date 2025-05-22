@@ -1,12 +1,14 @@
 name: First Workflow # workflow name
-on: workflow_dispatch # manually trigger
+on: push # which will trigger
 jobs:
   first-job: # job name
     #the runner env
     runs-on: ubuntu-latest
     steps:
-      - name: First Step # step name
-        run: echo "hello first step"
-      - name: Second stpe
-        run: echo "done - bye"
+      - name: run react # step name
+        run: npx create-react-app my-app
+      - name: cd to directory
+        run: cd my-app
+      - name: start react
+        run: npm start
         
