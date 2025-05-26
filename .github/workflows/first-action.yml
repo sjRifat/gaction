@@ -5,10 +5,6 @@ jobs:
     #the runner env
     runs-on: ubuntu-latest
     steps:
-      - name: run react # step name
-        run: npx create-react-app my-app
-      - name: cd to directory
-        run: cd my-app
-      - name: start react
-        run: npm start
+      - name: get location # step name
+        run: pwd
         
