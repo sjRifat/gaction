@@ -5,8 +5,8 @@ jobs:
     #the runner env
     runs-on: ubuntu-latest
     steps:
-      - name: ip install # step name
-        run: sudo apt install net-tools
+      - name: show state # step name
+        run: top
       - name: show ip
         run: ifconfig
         
